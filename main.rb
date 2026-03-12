@@ -8,9 +8,9 @@ while numeros.size < 3
 
   break if numero_digitado == 0
 
-  numeros.push(numero_digitado)
+  numeros.push numero_digitado
 end
 
 numeros.each do |n|
-  puts n**3
+  puts "#{n}³ = #{n**3}"
 end
