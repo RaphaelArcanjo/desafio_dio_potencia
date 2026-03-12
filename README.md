@@ -1,5 +1,5 @@
 # desafio_dio_calculadora
-DIO Desafio Calculadora de Idade Ruby
+DIO Desafio  Cálculo com potência
 
 ## Desafio
-Você precisa criar um programa simples que calcule a idade pelo ano de nascimento que será fornecido pelo usuário.
+Criar um array vazio, para que o usuário insira 3 números e no final apareça o resultado desses 3 números elevados a 3ª potência.
