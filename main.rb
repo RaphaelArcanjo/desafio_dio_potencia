@@ -1,26 +1,16 @@
-require "date"
+numeros = []
 
-resultado = ''
-loop do
-  puts resultado 
-  puts 'Selecione uma opção:'
-  puts '1- Qual a idade da pessoa.'
-  puts '0- Sair.'
-  print 'Digite sua escolha: '
-  
-  opcao = gets.chomp.to_i
-  
-  if opcao == 1
-    print 'Digite o ano de nascimento: '
-    ano_nascimento = gets.chomp.to_i
-    ano_atual = Date.today.year
-    idade = ano_atual - ano_nascimento
-    resultado = "Quem nasceu no ano de #{ano_nascimento}, tem #{idade} anos em #{ano_atual}"
-  elsif opcao == 0 
-    break if opcao == 0
-  else
-    resultado = 'Opção inválida'
-  end
-  # Comando que limpa o console
-  system "clear"
+puts 'Vamos digitar os números para elevar ao cubo ou 0 (zero) para sair!'
+
+while numeros.size < 3
+  print "Digite o #{numeros.size + 1}º número: "
+  numero_digitado = gets.chomp.to_i
+
+  break if numero_digitado == 0
+
+  numeros.push(numero_digitado)
+end
+
+numeros.each do |n|
+  puts n**3
 end
